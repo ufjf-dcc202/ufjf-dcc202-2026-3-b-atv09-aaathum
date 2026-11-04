@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilo.css">
+    <style>
+        ul{
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        li {
+            border: 1px solid blue;
+            background-color: lightblue;
+        }
+        .deconstructed-pancake{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .deconstructed-pancake > *{
+            flex-basis: 100px;
+            /* flex-grow: 1; /*a ordem desses dois importa! troca pra ver o que acontece*/
+            /* flex-shrink: 0; /*a ordem desses dois importa! troca pra ver o que acontece*/
+            flex: 1 0; /*isso aqui sao os dois de cima juntos, na real nao mas parece um pouco*/
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>exemple 2 pancake descontruido</h1>
+        <article>
+          <ul class="deconstructed-pancake">
+             <li>2</li>
+             <li>3</li>
+             <li>4</li>
+             <li>panqueca</li>
+             <li>lasanha</li>
+             <li>cafe da manha</li>
+          </ul>
+        </article>
+    </main>
+    
+</body>
+</html>
