@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilo.css">
+    <style>
+        /*tem algo de errado com o footer principalmente*/
+        header {
+            border: 1px solid blue;
+            background-color: purple;
+        }
+        footer {
+            border: 1px solid blue;
+            background-color: lightblue;
+        }
+        nav {
+            background-color: orange;
+        }
+        section {
+            background-color: antiquewhite;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        li {
+            border: 1px solid blue;
+            background-color: lightblue;
+        }
+        .holy-grail {
+            display: grid;
+            grid-template-rows: auto 1fr auto;
+            grid-template-columns: auto 1fr auto;
+        }
+        .holy-grail > header {
+            grid-column: 1 / 4;
+        }
+        .holy-grail > section {
+            overflow: auto;
+        }
+        .holy-grail > nav {
+            overflow: auto;
+            grid-column: 1/4;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <article class="holy-grail">
+            <header>
+                <h1>exemplo 5 holy grail</h1>
+            </header>
+            <nav>
+                <ul>
+                    <li>arthur</li>
+                    <li>pietro</li>
+                    <li>arthur</li>
+                    <li>pietro</li>
+                </ul>
+            </nav>
+            <section>
+                <h2>texto</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et praesentium quaerat odio maxime tenetur quibusdam a, repellat esse ullam nisi. Quam aliquid voluptatem iusto molestiae consequuntur distinctio natus perspiciatis blanditiis.</p>
+                <p>Doloremque iusto ex nihil cumque consequuntur magni nemo nobis illo numquam! Explicabo rem, eveniet repudiandae magni iste itaque tempore deleniti maiores accusantium maxime officiis repellat, iusto, quod corporis tempora aliquam.</p>
+                <p>Reiciendis dignissimos, quia sit perspiciatis ad fugiat velit labore? Perspiciatis neque, ab adipisci architecto optio commodi debitis quibusdam veniam autem in. Maxime dolorem inventore minima officiis beatae molestiae vel illo?</p>
+            </section>
+            <aside>
+                <ul>
+                    <li>arthur</li>
+                    <li>pietro</li>
+                    <li>arthur</li>
+                    <li>pietro</li>
+                </ul>
+            </aside>
+            <footer>
+            &COPY; 2026 - DCC202 - UFJF
+            </footer>
+        </article>
+    </main>
+</body>
+</html>
